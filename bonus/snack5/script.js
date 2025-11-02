@@ -28,3 +28,15 @@ const cognomi = [
   "Knowles",
   "Beckham"
 ];
+
+const guests = [];
+
+for (let i = 0; i < 5; i++) {
+  const randomIndexName = Math.floor(Math.random() * nomi.length - 1);
+  const randomIndexLastName = Math.floor(Math.random() * cognomi.length - 1);
+  const newName = nomi.at(randomIndexName);
+  const newLastName = cognomi.at(randomIndexLastName);
+  const newGuest = `${newName} ${newLastName}`;
+  guests.push(newGuest);
+}
+console.log(guests);
