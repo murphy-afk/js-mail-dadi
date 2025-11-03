@@ -7,9 +7,12 @@
 
 const userEmailList = ["a@g.com", "b@g.com", "c@g.com", "d@g.com" ];
 const userEmail = prompt("inserisci la tua email");
+let result = "Non sei registrato";
 for (let i = 0; i < userEmailList.length; i++) {
   if (userEmail === userEmailList[i]) {
-    console.log("Acesso approvato");
+    result = "Accesso approvato";
   }
 }
+console.log(result);
+
 
